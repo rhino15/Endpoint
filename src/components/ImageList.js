@@ -4,28 +4,27 @@ import ImageCard from './ImageCard';
 import ImageCardDetails from './ImageCardDetails';
 
 const ImageList = props => {
-  const images = props.images.map(image => {
+  console.log(props)
+  const { images } = props;
+  const imageCards = images ? images.map(image => {
     return (
       <div className="image-card-container" key={image.id}>
         <ImageCard
           author={image.author}
-          dek={image.dek}
-          hed={image.hed}
-          id={image.id}
           image={image.download_url}
         />
         <ImageCardDetails 
           author={image.author}
-          dek={image.dek}
-          hed={image.hed}
+          dek="Lorum Ipsom"
+          hed="Lorum Ipsom"
           id={image.id}
-          url={image.url}
+          url="https://endpointclosing.com"
         />
       </div>
-    )
-  });
+    );
+  }) : null;
 
-  return <div className="image-list-container">{images}</div>;
+  return <div className="image-list-container">{imageCards}</div>;
 };
 
 export default ImageList;
