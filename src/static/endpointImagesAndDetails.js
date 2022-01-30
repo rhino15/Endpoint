@@ -1,4 +1,4 @@
-const endpointImagesAndDetails = [
+export default [
   {
     "id": "0",
     "hed": "Lorum Ipsom",
@@ -40,7 +40,3 @@ const endpointImagesAndDetails = [
     "url": "https://endpointclosing.com"
     }
 ];
-
-export default {
-  endpointImagesAndDetails
-}
