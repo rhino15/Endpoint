@@ -16,6 +16,6 @@ git clone https://github.com/rhino15/endpoint.git
 cd endpoint && npm install
 ```
 
-3. Within `endpoint` on the command line, run "npm start" this runs a service on localhost port `3000`.
+3. Within `endpoint` on the command line, run `npm start` this runs a service on localhost port `3000`.
 
 4. It automatically opens the browser with the url: `localhost:3000`
