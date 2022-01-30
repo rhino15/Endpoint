@@ -19,3 +19,11 @@ cd endpoint && npm install
 3. Within `endpoint` on the command line, run `npm start` this runs a service on localhost port `3000`.
 
 4. It automatically opens the browser with the url: `localhost:3000`
+
+## Testing
+
+1. To test, run `npm test`
+
+```shell
+npm test
+```
