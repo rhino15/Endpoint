@@ -4,7 +4,6 @@ import ImageCard from './ImageCard';
 import ImageCardDetails from './ImageCardDetails';
 
 const ImageList = props => {
-  console.log(props)
   const { images } = props;
   const imageCards = images ? images.map(image => {
     return (
