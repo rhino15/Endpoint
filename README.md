@@ -1,6 +1,6 @@
 # Endpoint Coding Challenge
 
-This coding challenge required to use picsum to grab images and metadata to display image Cards with the corresponding data.
+This coding challenge required to use picsum to grab images and metadata to display image Cards with the corresponding data responsively using React.
 
 ## Developing
 
@@ -14,8 +14,8 @@ git clone https://github.com/rhino15/endpoint.git
 
 ```shell
 cd endpoint && npm install
+```
 
-3. Within `endpoint` on the command line, run "npm start" this runs a service on localhost port `3000`.
+3. Within `endpoint` on the command line, run `npm start` this runs a service on localhost port `3000`.
 
 4. It automatically opens the browser with the url: `localhost:3000`
-```
