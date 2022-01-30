@@ -10,9 +10,10 @@ hr {
 .image-list-container {
   display: grid;
   justify-content: center;
-  grid-gap: 0em 1.5em;
+  grid-gap: 2em 1.5em;
   grid-template-columns: repeat(3, auto);
   padding-bottom: 2em;
+  margin-top: 2em;
 }
 
 .image-list-container img {
@@ -22,7 +23,13 @@ hr {
 
 .image-card-container {
   background-color: #ffffff;
-  margin-top: 2em;
+  transition: transform 0.5s;
+  opacity: 0.85;
+}
+
+.image-card-container:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .details-card-container {
@@ -92,6 +99,7 @@ hr {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .image-list-container {
+    grid-gap: 2em;
     grid-template-columns: auto;
   }
 }
