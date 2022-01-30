@@ -4,9 +4,7 @@ import ImageCard from './ImageCard';
 import ImageCardDetails from './ImageCardDetails';
 
 const ImageList = props => {
-  const { endpointImagesAndDetails } = props.images;
-
-  const images = endpointImagesAndDetails.map(image => {
+  const images = props.images.map(image => {
     return (
       <div className="image-card-container" key={image.id}>
         <ImageCard
@@ -14,7 +12,7 @@ const ImageList = props => {
           dek={image.dek}
           hed={image.hed}
           id={image.id}
-          image={image.image}
+          image={image.download_url}
         />
         <ImageCardDetails 
           author={image.author}
