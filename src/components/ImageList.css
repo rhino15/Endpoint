@@ -11,12 +11,13 @@ hr {
   display: grid;
   justify-content: center;
   grid-gap: 0em 1.5em;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: repeat(3, auto);
   padding-bottom: 2em;
 }
 
 .image-list-container img {
   width: 100%;
+  object-fit: cover;
 }
 
 .image-card-container {
@@ -85,12 +86,12 @@ hr {
 @media (min-width: 768px) and (max-width: 1024px) {
   .image-list-container {
     grid-gap: 2em;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
   .image-list-container {
-    grid-template-columns: 300px;
+    grid-template-columns: auto;
   }
 }
